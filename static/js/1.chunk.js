@@ -1,4 +1,4 @@
-(this["webpackJsonpcanyonlands"] = this["webpackJsonpcanyonlands"] || []).push([[0],{
+(this["webpackJsonpcanyonlands"] = this["webpackJsonpcanyonlands"] || []).push([[1],{
 
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
@@ -31577,4 +31577,4 @@ if (false) {} else {
 /***/ })
 
 }]);
-//# sourceMappingURL=0.chunk.js.map
+//# sourceMappingURL=1.chunk.js.map

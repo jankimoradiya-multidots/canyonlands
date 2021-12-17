@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+/**
+ * Index file.
+ *
+ * @package Canyonlands
+ */
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+/**
+ * Internal Dependencies.
+ */
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+ 
+ import './index.css';
+ import Home from './templates/pages/home';
+//import Archive from './templates/Archive';
+//import Single from './templates/Single';
+import NotFound from './templates/notfound';
+//import Layout from './components/layout';
+//import Page from './components/pages/page';
+//import Category from './components/pages/category';
+//import Post from './components/pages/post';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const routes = (   
+   
+
+     <Router>
+       <Routes>
+         <Route exact path="/" element={Home}/>
+         <Route path="*" element={NotFound}/>
+       </Routes>
+   </Router>
+)
+
+ReactDOM.render(routes, document.getElementById('root'));

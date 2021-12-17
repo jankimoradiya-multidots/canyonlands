@@ -1,21 +1,40 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+/**
+ * App Component.
+ *
+ * @package Canyonlands
+ */
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>react-src/src/App.js</code> and save to reload.
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
-}
+/**
+ * Internal Dependencies.
+ */
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
+ 
+ import './index.css';
+ import Home from './templates/pages/home';
+//import Archive from './templates/Archive';
+//import Single from './templates/Single';
+import NotFound from './templates/notfound';
+//import Layout from './components/layout';
+//import Page from './components/pages/page';
+//import Category from './components/pages/category';
+//import Post from './components/pages/post';
 
-export default App;
+const routes = (   
+    <Router>
+      <Switch>               
+          <Route exact path="/" component={Home} />          
+          {/* <Route path="/page/:slug" component={Single} />    
+          <Route path="/post/:slug" component={Single} /> 
+          <Route path="/category/:catid" component={Archive} /> 
+          <Route path="/search/:term" component={Archive} />                               
+          <Redirect exact from='/post/' to='/' /> 
+          <Redirect exact from='/page/' to='/' />
+          <Redirect exact from='/search/' to='/' />         */}
+          <Route component={NotFound} /> 
+      </Switch>
+    </Router> 
+)
+
+ReactDOM.render(routes, document.getElementById('root'));
