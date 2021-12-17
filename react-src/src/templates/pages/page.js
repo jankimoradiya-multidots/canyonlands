@@ -11,6 +11,7 @@ class Page extends Component {
     }
 
     componentDidMount() {
+        alert("hii");
         const currentURL = window.location.href;
         fetch(`${ config.siteURL }wp-json/canyonlands/v2/postType?url=${currentURL}`)
         .then(response => response.json())
@@ -39,7 +40,7 @@ class Page extends Component {
 
     
     componentDidUpdate(){
-        alert("gfgf");
+       
     }
    
     render() {
