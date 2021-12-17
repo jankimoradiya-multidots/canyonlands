@@ -1,8 +1,5 @@
 import React, { Component, Fragment } from 'react';
-//import { useEffect, useState, useRef } from 'react';
-//import axios from 'axios';
 import config from '../../client-config';
-//import '../../images/default/default.jpg';
 import Head from '../../partials/header/header';
 import Foot from '../../partials/footer';
 class Page extends Component {
@@ -14,21 +11,36 @@ class Page extends Component {
     }
 
     componentDidMount() {
-        const slug = 'sample-page'
-        console.log("this.props");
-        console.log(this.props);
-        fetch(`${ config.siteURL }wp-json/wp/v2/pages?_embed&slug=${ slug }`)
+        const currentURL = window.location.href;
+        fetch(`${ config.siteURL }wp-json/canyonlands/v2/postType?url=${currentURL}`)
         .then(response => response.json())
         .then(data => {
-           if ( 0 < data.length ) {
-                this.setState( {data : data[0] } );
+            console.log("data");
             console.log(data);
+           if ( data ) {
+                const postType = data.postType
+            fetch(`${ config.siteURL }wp-json/wp/v2/${postType}s?_embed&slug=${ data.post_name }`)
+            .then(response => response.json())
+            .then(data => {
+            if ( 0 < data.length ) {
+                    this.setState( {data : data[0] } );
+                console.log(data);
+            } 
+            });
            } 
         });
+
+        
+        console.log("this.props");
+        console.log(this.props);
+        
+        
     }
 
     
-
+    componentDidUpdate(){
+        alert("gfgf");
+    }
    
     render() {
         const {data } = this.state;

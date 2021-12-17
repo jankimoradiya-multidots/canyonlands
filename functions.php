@@ -102,18 +102,52 @@ add_action( 'after_setup_theme', 'canyonlands_setup' );
  */
 
 
-add_action( 'rest_api_init', 'canyonlands_rest_endpoints');
+add_action( 'rest_api_init', 'canyonlands_rest_endpoints' );
 
 function canyonlands_rest_endpoints() {
-	register_rest_route( 'wp/v2', 'menu', array(
-        'methods' => 'GET',
-        'callback' => 'get_header_menu',
-		'permission_callback' => '__return_true',
-    ) );
+	register_rest_route(
+		'wp/v2',
+		'menu',
+		array(
+			'methods'             => 'GET',
+			'callback'            => 'get_header_menu',
+			'permission_callback' => '__return_true',
+		)
+	);
+
+	register_rest_route(
+		'canyonlands/v2',
+		'postType',
+		array(
+			'methods'             => 'GET',
+			'callback'            => 'get_canyonlands_post_type',
+			'permission_callback' => '__return_true',
+		)
+	);
 
 }
 
 function get_header_menu() {
-    // Replace your menu name, slug or ID carefully
-    return wp_get_nav_menu_items('header-menu');
+	// Replace your menu name, slug or ID carefully
+	return wp_get_nav_menu_items( 'header-menu' );
+}
+
+function get_canyonlands_post_type( WP_REST_Request $request ) {
+
+		$response   = array();
+		$parameters = $request->get_params();
+		$url        = ! empty( $parameters['url'] ) ? $parameters['url'] : '';
+		$post_name  = '';
+		$post_type  = '';
+		$id = url_to_postid( $url );
+		if ( $id ) {
+			$post      = get_post( $id );
+			$post_type = $post->post_type;
+			$post_name = $post->post_name;
+		}
+
+		$response['postType'] = $post_type;
+		$response['id'] = $id;
+		$response['post_name'] = $post_name;
+		return new WP_REST_Response( $response, 200 );
 }

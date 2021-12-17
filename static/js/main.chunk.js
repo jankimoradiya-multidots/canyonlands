@@ -88,9 +88,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _templates_pages_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/pages/home */ "./src/templates/pages/home.js");
-/* harmony import */ var _templates_notfound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/notfound */ "./src/templates/notfound.js");
-/* harmony import */ var _templates_pages_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/pages/page */ "./src/templates/pages/page.js");
+/* harmony import */ var _templates_pages_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/pages/Home */ "./src/templates/pages/Home.js");
+/* harmony import */ var _templates_NotFound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/NotFound */ "./src/templates/NotFound.js");
+/* harmony import */ var _templates_pages_Page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/pages/Page */ "./src/templates/pages/Page.js");
 var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/index.js";
 
 /**
@@ -107,12 +107,12 @@ var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public
 
 
  //import Archive from './templates/Archive';
-//import Single from './templates/Single';
 
  //import Layout from './components/layout';
 
  //import Category from './components/pages/category';
 //import Post from './components/pages/post';
+//import Single from './templates/pages/Single';
 
 const routes = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
   __self: undefined,
@@ -131,7 +131,7 @@ const routes = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createE
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
   path: "/",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_home__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_Home__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -148,7 +148,7 @@ const routes = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createE
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
   path: "/:pageSlug",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_page__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -164,7 +164,7 @@ const routes = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createE
   }
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   path: "*",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_notfound__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_NotFound__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -195,17 +195,261 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
 var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/partials/footer.js";
 
+
 function footer() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 12
+      lineNumber: 13,
+      columnNumber: 9
     }
-  }, "footer");
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-top-bar",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 17
+    }
+  }, "Multidots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 21
+    }
+  }, "USA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 21
+    }
+  }, "801 Barton Springs Rd ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 47
+    }
+  }), " Austin, TX 78704 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 71
+    }
+  }), " +1 (646) 586 5500")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 21
+    }
+  }, "India"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 21
+    }
+  }, "C-202, Ganesh Meridian,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 25
+    }
+  }), "S.G. Highway, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 39
+    }
+  }), "Ahmedabad. Gujarat-380060 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 51
+    }
+  }), "+91 87801-77094"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "copyright",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "social-links",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaWordpressSimple"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaGithub"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaFacebookF"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaTwitter"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaLinkedin"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaInstagram"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 29
+    }
+  })))), "@2021 Multidots. All right reserved."));
 }
 
 /***/ }),
@@ -393,7 +637,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _client_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../client-config */ "./src/client-config.js");
 var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/partials/header/nav.js";
+
 
 
 
@@ -406,7 +652,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    fetch(`./wp-json/wp/v2/menu`).then(response => response.json()).then(data => {
+    fetch(`${_client_config__WEBPACK_IMPORTED_MODULE_2__["default"].siteURL}/wp-json/wp/v2/menu`).then(response => response.json()).then(data => {
       if (0 < data.length) {
         this.setState({
           headerMenu: data
@@ -495,9 +741,78 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./src/templates/notfound.js":
+/***/ "./src/templates/Archive.js":
+/*!**********************************!*\
+  !*** ./src/templates/Archive.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AllPosts; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/Archive.js";
+
+function AllPosts() {
+  const [posts, setPosts] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    loading: false,
+    data: []
+  });
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setPosts({
+      loading: true
+    });
+    let postData = fetch('/wp-json/wp/v2/posts').then(res => res.json()).then(data => {
+      setPosts({
+        loading: false,
+        data: data
+      });
+    }).catch(err => console.log(err));
+    return postData;
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, posts.loading ? 'loading' : posts.data.map((post, index) => {
+    console.log(post);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 27
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 31
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: post.link,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 35
+      }
+    }, post.title.rendered)));
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/templates/NotFound.js":
 /*!***********************************!*\
-  !*** ./src/templates/notfound.js ***!
+  !*** ./src/templates/NotFound.js ***!
   \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -508,7 +823,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../partials/footer */ "./src/partials/footer.js");
 /* harmony import */ var _partials_header_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../partials/header/nav */ "./src/partials/header/nav.js");
-var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/notfound.js";
+var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/NotFound.js";
  //import Head from '../partials/header/nav';
 
 
@@ -588,30 +903,32 @@ class NotFound extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ "./src/templates/pages/home.js":
+/***/ "./src/templates/pages/Home.js":
 /*!*************************************!*\
-  !*** ./src/templates/pages/home.js ***!
+  !*** ./src/templates/pages/Home.js ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return home; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _partials_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../partials/header/header */ "./src/partials/header/header.js");
 /* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../partials/footer */ "./src/partials/footer.js");
-var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/home.js";
+/* harmony import */ var _Archive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Archive */ "./src/templates/Archive.js");
+var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/Home.js";
 
 
 
-function home() {
+
+function Home(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -619,21 +936,28 @@ function home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_header_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 17
     }
-  }), "hello world", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Archive__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 12,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
       columnNumber: 17
     }
   })));
@@ -641,9 +965,9 @@ function home() {
 
 /***/ }),
 
-/***/ "./src/templates/pages/page.js":
+/***/ "./src/templates/pages/Page.js":
 /*!*************************************!*\
-  !*** ./src/templates/pages/page.js ***!
+  !*** ./src/templates/pages/Page.js ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -655,11 +979,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _client_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../client-config */ "./src/client-config.js");
 /* harmony import */ var _partials_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../partials/header/header */ "./src/partials/header/header.js");
 /* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../partials/footer */ "./src/partials/footer.js");
-var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/page.js";
- //import { useEffect, useState, useRef } from 'react';
-//import axios from 'axios';
+var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/Page.js";
 
- //import '../../images/default/default.jpg';
 
 
 
@@ -673,17 +994,29 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const slug = 'sample-page';
-    console.log("this.props");
-    console.log(this.props);
-    fetch(`${_client_config__WEBPACK_IMPORTED_MODULE_1__["default"].siteURL}wp-json/wp/v2/pages?_embed&slug=${slug}`).then(response => response.json()).then(data => {
-      if (0 < data.length) {
-        this.setState({
-          data: data[0]
+    const currentURL = window.location.href;
+    fetch(`${_client_config__WEBPACK_IMPORTED_MODULE_1__["default"].siteURL}wp-json/canyonlands/v2/postType?url=${currentURL}`).then(response => response.json()).then(data => {
+      console.log("data");
+      console.log(data);
+
+      if (data) {
+        const postType = data.postType;
+        fetch(`${_client_config__WEBPACK_IMPORTED_MODULE_1__["default"].siteURL}wp-json/wp/v2/${postType}s?_embed&slug=${data.post_name}`).then(response => response.json()).then(data => {
+          if (0 < data.length) {
+            this.setState({
+              data: data[0]
+            });
+            console.log(data);
+          }
         });
-        console.log(data);
       }
     });
+    console.log("this.props");
+    console.log(this.props);
+  }
+
+  componentDidUpdate() {
+    alert("gfgf");
   }
 
   render() {
@@ -694,14 +1027,14 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 48,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_header_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 49,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
@@ -709,7 +1042,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 50,
         columnNumber: 21
       }
     }, data.title && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -719,7 +1052,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 52,
         columnNumber: 8
       }
     }), data.content && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -729,7 +1062,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 70,
         columnNumber: 8
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
@@ -737,14 +1070,14 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
+        lineNumber: 77,
         columnNumber: 6
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 78,
         columnNumber: 21
       }
     }));
@@ -769,5 +1102,5 @@ module.exports = __webpack_require__(/*! /Users/jankimoradiya/Desktop/Projects/m
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

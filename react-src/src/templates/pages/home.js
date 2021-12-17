@@ -1,20 +1,18 @@
 import React from 'react';
 import Head from '../../partials/header/header';
 import Foot from '../../partials/footer';
+import Archive from '../Archive';
 
-export default function home() {
+
+export default function Home(props) {
     return (
         <div>
             <div className="home">
                 <Head></Head>
-                hello world
-                {/* <div className="content-area">
-      <h1>{pageTitle}</h1>
-      <TheLoop></TheLoop>
-      <Pager></Pager>
-      </div> */}
+                <Archive />
                 <Foot></Foot>
             </div>
         </div>
     );
 }
+

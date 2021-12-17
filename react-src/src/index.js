@@ -12,14 +12,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
-import Home from './templates/pages/home';
+import Home from './templates/pages/Home';
 //import Archive from './templates/Archive';
-//import Single from './templates/Single';
-import NotFound from './templates/notfound';
+import NotFound from './templates/NotFound';
 //import Layout from './components/layout';
-import Page from './templates/pages/page';
+import Page from './templates/pages/Page';
 //import Category from './components/pages/category';
 //import Post from './components/pages/post';
+//import Single from './templates/pages/Single';
 
 const routes = (
     <Router>

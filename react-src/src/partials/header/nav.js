@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 import { Link } from 'react-router-dom';
-
+import config from '../../client-config';
 
 class Nav extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class Nav extends Component {
     }
 
     componentDidMount() {
-            fetch(`./wp-json/wp/v2/menu`)
+            fetch(`${config.siteURL}/wp-json/wp/v2/menu`)
                 .then(response => response.json())
                 .then(data => {
                    if ( 0 < data.length ) {
