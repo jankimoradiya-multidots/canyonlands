@@ -39,7 +39,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/wp-content/themes/canyonlands/static/css/main.chunk.css?fc45b2047e54cfbf12e4" rel="stylesheet"></head>
+<link href="/wp-content/themes/canyonlands/static/css/main.chunk.css?0fafd72023482197673b" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/wp-content/themes/canyonlands/static/js/bundle.js?fc45b2047e54cfbf12e4"></script><script src="/wp-content/themes/canyonlands/static/js/0.chunk.js?fc45b2047e54cfbf12e4"></script><script src="/wp-content/themes/canyonlands/static/js/main.chunk.js?fc45b2047e54cfbf12e4"></script></body>
+    <script src="/wp-content/themes/canyonlands/static/js/bundle.js?0fafd72023482197673b"></script><script src="/wp-content/themes/canyonlands/static/js/0.chunk.js?0fafd72023482197673b"></script><script src="/wp-content/themes/canyonlands/static/js/main.chunk.js?0fafd72023482197673b"></script></body>
 </html>
