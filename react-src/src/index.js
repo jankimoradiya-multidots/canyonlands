@@ -20,7 +20,6 @@ import NotFound from './templates/notfound';
 //import Page from './components/pages/page';
 //import Category from './components/pages/category';
 //import Post from './components/pages/post';
-import Footer from './partials/footer';
 
 const routes = (
     <Router>
@@ -28,7 +27,6 @@ const routes = (
             <Route exact path="/" element={<Home />} />
             <Route path="*" element={NotFound} />
         </Routes>
-        {/* <Footer /> */}
     </Router>
 );
 
