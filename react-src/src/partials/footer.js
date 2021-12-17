@@ -12,11 +12,13 @@ const Footer = styled.footer`
     text-align: center;
     padding: 50px 0px;
     background: #f7f7f7;
+    color: black;
     .address {
         width: 70%;
         margin: 80px auto 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        color: black;
         .column {
             width: 50%;
             margin: 0 auto;

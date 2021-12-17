@@ -13,19 +13,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
 import Home from './templates/pages/Home';
-//import Archive from './templates/Archive';
-import NotFound from './templates/notfound';
-//import Layout from './components/layout';
-//import Page from './components/pages/page';
-//import Category from './components/pages/category';
-//import Post from './components/pages/post';
-import Single from './templates/pages/Single';
+import NotFound from './templates/NotFound';
+import Page from './templates/pages/Page';
+
 const routes = (
     <Router>
         <Routes>
             <Route exact path="/" element={<Home />} />
-            {/* <Route exact path="/:slug" element={<Single />} /> */}
-            <Route path="*" element={NotFound} />
+            <Route path="/sample-page" element={<Page />}  />
+            <Route path="/page-1" element={<Page />}  />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>
 );
