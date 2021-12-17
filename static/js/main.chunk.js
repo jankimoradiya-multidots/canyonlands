@@ -1,5 +1,74 @@
 (this["webpackJsonpcanyonlands"] = this["webpackJsonpcanyonlands"] || []).push([["main"],{
 
+/***/ "./src/components/AllPosts.js":
+/*!************************************!*\
+  !*** ./src/components/AllPosts.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AllPosts; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-content/themes/canyonlands/react-src/src/components/AllPosts.js";
+
+function AllPosts() {
+  const [posts, setPosts] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    loading: false,
+    data: []
+  });
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setPosts({
+      loading: true
+    });
+    let postData = fetch('/wp-json/wp/v2/posts').then(res => res.json()).then(data => {
+      setPosts({
+        loading: false,
+        data: data
+      });
+    }).catch(err => console.log(err));
+    return postData;
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, posts.loading ? 'loading' : posts.data.map((post, index) => {
+    console.log(post);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 27
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 31
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: post.link,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 35
+      }
+    }, post.title.rendered)));
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/index.css":
 /*!***********************!*\
   !*** ./src/index.css ***!
@@ -27,9 +96,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _templates_pages_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/pages/home */ "./src/templates/pages/home.js");
+/* harmony import */ var _templates_pages_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/pages/Home */ "./src/templates/pages/Home.js");
 /* harmony import */ var _templates_notfound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/notfound */ "./src/templates/notfound.js");
 /* harmony import */ var _templates_notfound__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_templates_notfound__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _templates_pages_Single__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/pages/Single */ "./src/templates/pages/Single.js");
 var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-content/themes/canyonlands/react-src/src/index.js";
 
 /**
@@ -46,42 +116,42 @@ var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-con
 
 
  //import Archive from './templates/Archive';
-//import Single from './templates/Single';
 
  //import Layout from './components/layout';
 //import Page from './components/pages/page';
 //import Category from './components/pages/category';
 //import Post from './components/pages/post';
 
+
 const routes = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25,
+    lineNumber: 24,
     columnNumber: 5
   }
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Routes"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26,
+    lineNumber: 25,
     columnNumber: 9
   }
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
   path: "/",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_home__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_templates_pages_Home__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 44
     }
   }),
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27,
+    lineNumber: 26,
     columnNumber: 13
   }
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -425,30 +495,32 @@ const Header = props => {
 
 /***/ }),
 
-/***/ "./src/templates/pages/home.js":
+/***/ "./src/templates/pages/Home.js":
 /*!*************************************!*\
-  !*** ./src/templates/pages/home.js ***!
+  !*** ./src/templates/pages/Home.js ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return home; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _partials_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../partials/header/header */ "./src/partials/header/header.js");
 /* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../partials/footer */ "./src/partials/footer.js");
-var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/home.js";
+/* harmony import */ var _components_AllPosts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../components/AllPosts */ "./src/components/AllPosts.js");
+var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/Home.js";
 
 
 
-function home(props) {
+
+function Home(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -456,21 +528,89 @@ function home(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_header_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 17
     }
-  }), "hello world", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), "hello world new", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AllPosts__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 12,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 17
+    }
+  })));
+} // const Home = (props) => {
+//   //let pageTitle = props.match.path === '/search/:term' ? 'Search Results' : '';
+//   return (
+//    // <Provider router={props} >
+//    // </Provider>
+//   )
+// }
+// export default Home
+
+/***/ }),
+
+/***/ "./src/templates/pages/Single.js":
+/*!***************************************!*\
+  !*** ./src/templates/pages/Single.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Single; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _partials_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../partials/header/header */ "./src/partials/header/header.js");
+/* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../partials/footer */ "./src/partials/footer.js");
+var _jsxFileName = "/Users/anamhossain/Local Sites/canyonlands/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/Single.js";
+
+
+
+function Single(props) {
+  console.log(props.match.params);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_header_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 17
+    }
+  }), "this is single page", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
       columnNumber: 17
     }
   })));
@@ -497,5 +637,5 @@ module.exports = __webpack_require__(/*! /Users/anamhossain/Local Sites/canyonla
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map
