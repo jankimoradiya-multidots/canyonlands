@@ -1,20 +1,14 @@
 import React from 'react';
 import Head from '../../partials/header/header';
 import Foot from '../../partials/footer';
-import AllPosts from './../../components/AllPosts';
 
-export default function Home(props) {
+export default function Single(props) {
+    console.log(props.match.params);
     return (
         <div>
             <div className="home">
                 <Head></Head>
-                hello world new
-                <AllPosts />
-                {/* <div className="content-area">
-      <h1>{pageTitle}</h1>
-      <TheLoop></TheLoop>
-      <Pager></Pager>
-      </div> */}
+                this is single page
                 <Foot></Foot>
             </div>
         </div>
