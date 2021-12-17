@@ -653,11 +653,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _client_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../client-config */ "./src/client-config.js");
+/* harmony import */ var _partials_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../partials/header/header */ "./src/partials/header/header.js");
+/* harmony import */ var _partials_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../partials/footer */ "./src/partials/footer.js");
 var _jsxFileName = "/Users/jankimoradiya/Desktop/Projects/mdhackathon/app/public/wp-content/themes/canyonlands/react-src/src/templates/pages/page.js";
  //import { useEffect, useState, useRef } from 'react';
 //import axios from 'axios';
 
  //import '../../images/default/default.jpg';
+
+
+
 
 class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
@@ -685,19 +690,26 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     const {
       data
     } = this.state;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 17
+        lineNumber: 36,
+        columnNumber: 13
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_header_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 21
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
       className: `page-content`,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 38,
         columnNumber: 21
       }
     }, data.title && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -707,7 +719,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 40,
         columnNumber: 8
       }
     }), data.content && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -717,7 +729,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55,
+        lineNumber: 58,
         columnNumber: 8
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
@@ -725,8 +737,15 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62,
+        lineNumber: 65,
         columnNumber: 6
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 21
       }
     }));
   }
@@ -750,5 +769,5 @@ module.exports = __webpack_require__(/*! /Users/jankimoradiya/Desktop/Projects/m
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map

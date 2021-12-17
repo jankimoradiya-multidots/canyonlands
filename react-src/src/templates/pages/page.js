@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 //import { useEffect, useState, useRef } from 'react';
 //import axios from 'axios';
 import config from '../../client-config';
 //import '../../images/default/default.jpg';
+import Head from '../../partials/header/header';
+import Foot from '../../partials/footer';
 class Page extends Component {
     constructor(props) {
          super(props);
@@ -31,7 +33,8 @@ class Page extends Component {
     render() {
         const {data } = this.state;
         return (
-                <div> 
+            <Fragment>
+                    <Head></Head>
                     <section className={`page-content`}>
 						{ data.title && (
 							<h2 dangerouslySetInnerHTML={{ __html: data.title.rendered }}/>
@@ -60,7 +63,9 @@ class Page extends Component {
 						) }
 					</section>
 					<aside className="aside"></aside>
-                </div>
+                    <Foot></Foot>
+            </Fragment>
+                    
         );
     }
 };
